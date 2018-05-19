@@ -1,0 +1,25 @@
+{% extends 'blog/../layouts/master_blade.html' %}
+{% block content %}
+
+<h1>{{ c.title }}</h1>
+    <hr/>
+
+{#{% if blog_list %} {# 判断todos是否有内容，若有内容显示内容 #}
+<div class="table-responsive">
+{#    <table class="table table-bordered table-striped table-hover">#}
+
+{#        <tbody>#}
+
+{#                {% for i in blog_list %}#}
+{#                    <div><h2><a href="" >{{ i.title }}</a></h2></div>#}
+                <div><p>{{ c.timestamp }}</p></div>
+                <div style="width: 800px;"><h3 style="line-height: 30px">{{ c.body|safe|linebreaksbr }}</h3></div><hr>
+
+{#                {% endfor %}#}
+{#        </tbody>#}
+{#    </table>#}
+</div>
+<div class="text-center">
+</div>
+{#{% endif %}#}
+{% endblock content %}

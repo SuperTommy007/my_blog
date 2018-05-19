@@ -1,0 +1,28 @@
+{% load blog_tags %}
+   <!-- ************* recent_posts **********************-->
+<div class="widget widget-recent-posts" style="float: right;">
+    <h3 class="widget-title">最新文章</h3>
+    {% get_recent_posts as recent_post_list %}
+    <ul>
+    {% for i in recent_post_list %}
+    <li>
+      <a href="/blogdetails/{{ i.id }}" >{{ i.title }}</a>
+    </li>
+    {% empty %}
+    暂无文章！
+    {% endfor %}
+    </ul>
+
+
+    <h3 class="widget-title">归档</h3>
+    {% archives as data_list %}
+    <ul>
+    {% for i in data_list %}
+        <li>
+            <a href="">{{ i.year }} 年 {{ i.month }} 月</a>
+        </li>
+    {% empty %}
+    暂无文章！
+    {% endfor %}
+    </ul>
+</div>

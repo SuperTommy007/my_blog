@@ -1,0 +1,46 @@
+[2018-05-17 20:30:22 +0800] [2395] [INFO] Starting gunicorn 19.8.1
+[2018-05-17 20:30:22 +0800] [2395] [INFO] Listening at: http://127.0.0.1:8000 (2395)
+[2018-05-17 20:30:22 +0800] [2395] [INFO] Using worker: sync
+[2018-05-17 20:30:22 +0800] [2398] [INFO] Booting worker with pid: 2398
+[2018-05-17 20:30:22 +0800] [2400] [INFO] Booting worker with pid: 2400
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:22: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:14: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list,3)
+Not Found: /img/img1.jpg
+Not Found: /img/img1.jpg
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:14: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list,3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:22: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:14: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list,3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:22: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:14: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list,3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:22: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:22: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list, 3)
+/home/tommy/django_project/my_blog/my_blog/blog/views.py:14: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.BlogPost'> QuerySet.
+  paginator = Paginator(blog_list,3)
+Not Found: /q

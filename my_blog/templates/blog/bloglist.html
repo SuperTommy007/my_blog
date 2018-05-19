@@ -1,0 +1,49 @@
+{% extends 'blog/../layouts/master_blade.html' %}
+{% block content %}
+{% load blog_tags %}
+<div>
+    <h1>Blogs <a href="" class="btn btn-primary pull-right btn-sm">☆</a></h1>
+{#    <form method="POST" action="/todo/create/" accept-charset="UTF-8" class="form-horizontal " role="form">#}
+{#        <!-- <input name="_token" type="hidden" value="USs1eovm6BPu15NWpDrjZ3edGcq1ESUyWgDCxBh2"> -->#}
+{#        <!-- Name Field -->#}
+{#        <div class="form-group">#}
+{#            <label for="name" class="col-sm-3 control-label">Todo Name</label>#}
+{#            <div class="col-sm-6">#}
+{#                <input class="form-control" name="title" type="text" id="name" style="width: 100px">#}
+{#                <span class="help-block text-danger">#}
+{##}
+{#                </span>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <!-- Submit Button -->#}
+{#        <div class="form-group">#}
+{#            <div class="col-sm-offset-3 col-sm-5">#}
+{#                <input class="btn btn-primary" type="submit" value="Create Button">#}
+{#            </div>#}
+{#        </div>#}
+{#    </form>#}
+</div>
+    <hr/>
+{% include 'blog/../partials/recent_posts.html' %}
+{% if blog_list %} {# 判断blog_list是否有内容，若有内容显示内容 #}
+<div class="table-responsive">
+
+    {% for i in blog_list reversed %}
+        <div><h2><a href="/blogdetails/{{ i.id }}" >{{ i.title }}</a></h2></div>
+        <div><p>{{ i.timestamp }}</p></div>
+        <div style="height:60px;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;">
+            {{ i.body|linebreaksbr }}</div><hr>
+    {% endfor %}
+
+    {% if blog_list.has_next %} {# 判断是否有上一页 #}
+        <a href="/pre/{{ blog_list.next_page_number }}">上一页</a>
+    {% endif %}
+
+    {% if blog_list.has_previous %} {# 判断是否有下一页 #}
+        <a href="/next/{{ blog_list.previous_page_number }}">下一页</a>
+    {% endif %}
+
+</div>
+{% endif %}
+{% endblock content %}

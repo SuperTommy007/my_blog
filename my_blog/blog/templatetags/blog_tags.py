@@ -1,4 +1,4 @@
-from ..models import BlogPost
+from ..models import BlogPost,Category
 from django import template
 
 register = template.Library()
@@ -10,3 +10,7 @@ def get_recent_posts(num=5):
 @register.simple_tag
 def archives():
     return BlogPost.objects.dates('timestamp', 'month', order='DESC')
+
+@register.simple_tag
+def categorys():
+    return Category.objects.all()

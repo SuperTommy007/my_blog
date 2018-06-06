@@ -25,4 +25,16 @@
     暂无文章！
     {% endfor %}
     </ul>
+
+    <h3 class="widget-title">分类</h3>
+    {% categorys as categorys %}
+    <ul>
+    {% for i in categorys %}
+        <li>
+            <a href="/categry/{{ i.id }}">{{ i.category_name }}</a>
+        </li>
+    {% empty %}
+    暂无文章！
+    {% endfor %}
+    </ul>
 </div>

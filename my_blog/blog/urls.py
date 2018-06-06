@@ -7,5 +7,5 @@ urlpatterns = [
     url(r'^pre/(?P<pk>[0-9]+)/$', views.pre),
     url(r'^next/(?P<pk>[0-9]+)/$', views.next),
     url(r'^search$', views.search),
-
+    url(r'^categry/(?P<pk>[0-9]+)/$', views.categry),
 ]

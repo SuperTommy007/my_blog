@@ -21,17 +21,14 @@ def pre(request,pk):
     blog_list = BlogPost.objects.all()
     paginator = Paginator(blog_list, 3)
     # print(dir(request.GET))
-    print(pk)
+    # print(pk)
     return render(request, 'blog/bloglist.html', {'blog_list': paginator.page(pk)})
-
 
 def next(request,pk):
     blog_list = BlogPost.objects.all()
     paginator = Paginator(blog_list, 3)
-    print(pk)
+    # print(pk)
     return render(request, 'blog/bloglist.html', {'blog_list': paginator.page(pk)})
-
-
 
 def blog_details(request,pk):
     print(pk)
@@ -44,6 +41,14 @@ def blog_details(request,pk):
                                   ])
     return render(request, 'blog/blogdetails.html', {'c':blogdetail})
     # return HttpResponse(blogdetail.title)
+
+def categry(request,pk):
+    print(pk)
+    blog_list = BlogPost.objects.filter(category_id=pk)
+    print(len(blog_list))
+    # paginator = Paginator(blog_list, 2)
+    return render(request, 'blog/bloglist.html', {'blog_list': blog_list})
+
 
 def search(request):
     return render(request,'blog/create.html')
